@@ -4,80 +4,53 @@
 <meta charset="UTF-8">
 <title>Dashboard Análisis Colchones</title>
 <style>
-    body {
-        font-family: Arial, sans-serif;
-        margin: 40px;
-        background-color: #f5f7fa;
-    }
-    h1 {
-        color: #2c3e50;
-        margin-bottom: 10px;
-    }
-    p {
-        color: #555;
-        margin-bottom: 30px;
-    }
+    body { font-family: Arial; margin: 40px; background-color: #f5f7fa; }
+    h1 { color: #2c3e50; }
     .card-container {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
         gap: 20px;
+        margin-top: 30px;
     }
     .card {
-        background: white;
-        padding: 20px;
-        border-radius: 10px;
+        background: white; padding: 20px; border-radius: 10px;
+        text-decoration: none; color: #2c3e50;
         box-shadow: 0 3px 10px rgba(0,0,0,0.1);
         transition: 0.3s;
-        text-decoration: none;
-        color: #2c3e50;
     }
-    .card:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 6px 16px rgba(0,0,0,0.15);
-    }
-    .card h3 {
-        margin-top: 0;
-        margin-bottom: 10px;
-        font-size: 20px;
-    }
-    .card p {
-        margin: 0;
-        font-size: 14px;
-        color: #666;
-    }
+    .card:hover { transform: translateY(-5px); }
 </style>
 </head>
 
 <body>
 
-<h1>Dashboard • Análisis de Colchones</h1>
-<p>Selecciona una gráfica para visualizarla:</p>
+<h1>Dashboard · Análisis de Colchones</h1>
 
 <div class="card-container">
 
     <a class="card" href="colchones_3d_materiales.html" target="_blank">
-        <h3>Gráfica 3D Materiales</h3>
-        <p>Comparación tridimensional de materiales de colchones.</p>
+        <h3>3D Materiales</h3>
+        <p>Comparación tridimensional de materiales.</p>
     </a>
 
     <a class="card" href="colchones_mapa.html" target="_blank">
-        <h3>Mapa Firmeza vs Precio</h3>
-        <p>Dispersión general de colchones por precio y firmeza.</p>
+        <h3>Firmeza vs Precio</h3>
+        <p>Dispersión general.</p>
     </a>
 
     <a class="card" href="colchones_mapa_opciones.html" target="_blank">
         <h3>Mapa Interactivo</h3>
-        <p>Selector de tamaños y rangos de precio.</p>
+        <p>Filtros y rangos.</p>
     </a>
 
     <a class="card" href="matriz_correlacion.html" target="_blank">
         <h3>Matriz de Correlación</h3>
-        <p>Relaciones entre características principales.</p>
+        <p>Relación entre variables.</p>
     </a>
 
     <a class="card" href="matriz_correlacion_out.html" target="_blank">
-        <h3>Matriz Correlación (Out)</h3>
-        <p>Versión alternativa con otras variables.</p>
+        <h3>Matriz (Out)</h3>
+        <p>Versión alternativa.</p>
     </a>
 
 </div>
